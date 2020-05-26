@@ -1,3 +1,9 @@
 let name = "Joe";
 
-console.log(name);
+function RecoverName(name) {
+
+  return "My name is " + name;
+
+}
+
+console.log(RecoverName(name));
