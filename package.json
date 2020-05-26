@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint **/*.js",
     "lint:fix": "eslint **/*.js --fix",
-    "lint:watch": "esw **/*.js --watch"
+    "lint:watch": "esw **/*.js --watch",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c"
   },
   "husky": {
     "hooks": {
@@ -36,6 +38,11 @@
   },
   "homepage": "https://github.com/TheveninKillian/Modern_project#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
@@ -46,6 +53,9 @@
     "eslint-watch": "^6.0.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.10.9",
+    "rollup-plugin-terser": "^6.1.0"
   }
 }
