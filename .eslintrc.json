@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "prettier", "prettier/standard"],
+  "extends": ["eslint:recommended", "prettier", "prettier/standard", "plugin:jest/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
