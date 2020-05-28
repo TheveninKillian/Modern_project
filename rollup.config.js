@@ -9,7 +9,7 @@ export default {
   input: "js/index.js",
   output: {
     format: "esm",
-    file: "dist/index.esm.js",
+    file: "dist/bundle.esm.js",
   },
   external: ["smartcrop"],
   plugins: [
